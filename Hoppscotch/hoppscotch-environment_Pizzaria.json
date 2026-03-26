@@ -1,0 +1,25 @@
+{
+  "id": "g64k32nz8h",
+  "v": 2,
+  "name": "Pizzaria",
+  "variables": [
+    {
+      "key": "baseurl",
+      "secret": false,
+      "initialValue": "http://localhost:",
+      "currentValue": ""
+    },
+    {
+      "key": "port",
+      "secret": false,
+      "initialValue": "3000",
+      "currentValue": ""
+    },
+    {
+      "key": "token",
+      "secret": false,
+      "initialValue": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTg4OWJiYzE3Y2YyY2E1OWU3NGRiZCIsImlhdCI6MTcxNzA3ODUwOSwiZXhwIjoxNzE3MTY0OTA5fQ.0CouzUlJ6NF-OrtS0GWcW-pMilYrQIiNv-q-kcHG4mo",
+      "currentValue": ""
+    }
+  ]
+}

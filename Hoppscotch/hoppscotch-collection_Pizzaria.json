@@ -1,0 +1,800 @@
+{
+  "v": 11,
+  "name": "Pizzaria",
+  "folders": [
+    {
+      "v": 11,
+      "name": "User",
+      "folders": [],
+      "requests": [
+        {
+          "v": "17",
+          "name": "FindAll",
+          "method": "GET",
+          "endpoint": "<<baseurl>><<port>>/usuario/findAll",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "FindByID",
+          "method": "GET",
+          "endpoint": "<<baseurl>><<port>>/usuario/findById/6346033b913629547979422e",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Create",
+          "method": "POST",
+          "endpoint": "<<baseurl>><<port>>/usuario/create",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"nome\": \"Tadeu 123\",\n  \"email\": \"tadeu32145@email.com\",\n  \"senha\": \"senhasecreta123\",\n  \"imagem\": \"img.tadeusite.com.br/tadeu123.jpg\",\n  \"admin\": true\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Update",
+          "method": "PUT",
+          "endpoint": "<<baseurl>><<port>>/usuario/update/63460282c459305bb574fd65",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"nome\": \"Tadeu\",\n  \"email\": \"tadeu@email.com\",\n  \"senha\": \"senhasecreta123\",\n  \"imagem\": \"img.tadeusite.com.br/tadeu.jpg\",\n  \"admin\": false\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Delete",
+          "method": "DELETE",
+          "endpoint": "<<baseurl>><<port>>/usuario/remove/634cb7e1e1380e93ccfa9c5c",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Add Address",
+          "method": "POST",
+          "endpoint": "<<baseurl>><<port>>/usuario/addAddress/63460282c459305bb574fd65",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "\n  [\n    {\n      \"rua\": \"rua teste 1 \",\n      \"numero\": 123,\n      \"CEP\": \"12312-123\"\n    },\n    {\n      \"rua\": \"rua teste 2\",\n      \"numero\": 321,\n      \"CEP\": \"32121-321\"\n    },\n    {\n      \"rua\": \"rua teste 3\",\n      \"numero\": 321564,\n      \"CEP\": \"32121-333\"\n    }\n  ]\n"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Rm Address",
+          "method": "DELETE",
+          "endpoint": "<<baseurl>><<port>>/usuario/removeAddress",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"id\":\"6346033b913629547979422e\",\n  \"addressId\":\"63460356913629547979423a\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Add Fav Pizza",
+          "method": "POST",
+          "endpoint": "<<baseurl>><<port>>/usuario/addFavPizza/63460282c459305bb574fd65",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"_id\": \"6348b3c5a87ac732c263d90c\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Rm Fav Pizza",
+          "method": "DELETE",
+          "endpoint": "<<baseurl>><<port>>/usuario/removeFavPizza/63460282c459305bb574fd65",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"_id\": \"6348b3c5a87ac732c263d90c\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "variables": [],
+      "description": null
+    },
+    {
+      "v": 11,
+      "name": "Auth",
+      "folders": [],
+      "requests": [
+        {
+          "v": "17",
+          "name": "Login",
+          "method": "POST",
+          "endpoint": "<<baseurl>><<port>>/auth/login",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": " {\n    \"email\": \"tadeu32144@email.com\",\n    \"senha\": \"senhasecreta123\"\n }"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "variables": [],
+      "description": null
+    },
+    {
+      "v": 11,
+      "name": "Pizza",
+      "folders": [],
+      "requests": [
+        {
+          "v": "17",
+          "name": "FindAll",
+          "method": "GET",
+          "endpoint": "<<baseurl>><<port>>/pizza/findAll",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "FindById",
+          "method": "GET",
+          "endpoint": "<<baseurl>><<port>>/pizza/find/6348b3cea87ac732c263d911",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Create",
+          "method": "POST",
+          "endpoint": "<<baseurl>><<port>>/pizza/create",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"nome\": \"Margherita Grande\",\n  \"descricao\": \"Massa fina, molho de tomate e queijo\",\n  \"tamanhos\": [{ \"nome\": \"P\", \"preco\": 20 }, { \"nome\": \"M\", \"preco\": 30 }],\n  \"imagem\": \"img.siteimgs/pizza_margherita.jpg\",\n  \"categorias\": [\n      { \"_id\":\"634886e8d2529fb8ad850bf0\" }  \n  ]\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Update",
+          "method": "PUT",
+          "endpoint": "<<baseurl>><<port>>/pizza/update/6348b3c5a87ac732c263d90c",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"nome\": \"Calabresa Medio\",\n  \"descricao\": \"Calabresa, cebola e queijo\",\n  \"tamanhos\": [{ \"nome\": \"M\", \"preco\": 35 }],\n  \"imagem\": \"img.siteimgs/pizza_calabresa.jpg\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Delete",
+          "method": "DELETE",
+          "endpoint": "<<baseurl>><<port>>/pizza/delete/634a14cf00c7709e0d63172e",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Add categoria",
+          "method": "POST",
+          "endpoint": "<<baseurl>><<port>>/pizza/addCategoria/6348b3f4a29add9b7a2a6bc9",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"_id\": \"634886e8d2529fb8ad850bf0\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Remove Categoria",
+          "method": "DELETE",
+          "endpoint": "<<baseurl>><<port>>/pizza/removeCategoria/6348b3f4a29add9b7a2a6bc9",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"_id\": \"634886e8d2529fb8ad850bf0\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "variables": [],
+      "description": null
+    },
+    {
+      "v": 11,
+      "name": "Categoria",
+      "folders": [],
+      "requests": [
+        {
+          "v": "17",
+          "name": "FindAll",
+          "method": "GET",
+          "endpoint": "<<baseurl>><<port>>/categoria/findAll",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "FindById",
+          "method": "GET",
+          "endpoint": "<<baseurl>><<port>>/categoria/find/634886e8d2529fb8ad850bf0",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Create",
+          "method": "POST",
+          "endpoint": "<<baseurl>><<port>>/categoria/create",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"nome\": \"Massas\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Update",
+          "method": "PUT",
+          "endpoint": "<<baseurl>><<port>>/categoria/update/634cbcba17bea50638e082d1",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"nome\": \"Massas - Novos Sabores\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Delete",
+          "method": "DELETE",
+          "endpoint": "<<baseurl>><<port>>/categoria/delete/634cbcba17bea50638e082d1",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "variables": [],
+      "description": null
+    },
+    {
+      "v": 11,
+      "name": "Carrinho",
+      "folders": [],
+      "requests": [
+        {
+          "v": "17",
+          "name": "FindAll",
+          "method": "GET",
+          "endpoint": "<<baseurl>><<port>>/carrinho/findAll",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "FindById",
+          "method": "GET",
+          "endpoint": "<<baseurl>><<port>>/carrinho/find/6348b93f2d329b537e3d7106",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Create",
+          "method": "POST",
+          "endpoint": "<<baseurl>><<port>>/carrinho/create",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"pizzas\": [\n    {\"_id\": \"6348b3f4a29add9b7a2a6bc9\", \"quantidade\": 3},\n    {\"_id\": \"6348b3c5a87ac732c263d90c\", \"quantidade\": 3}\n  ],\n  \"precoTotal\": 390.45,\n  \"frete\": 10\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Update",
+          "method": "PUT",
+          "endpoint": "<<baseurl>><<port>>/carrinho/update/6348b93f2d329b537e3d7106",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n    \"pizzas\": [\n      {\n        \"_id\": \"6348b3f4a29add9b7a2a6bc9\",\n        \"quantidade\": 3\n      },\n      {\n        \"_id\": \"6348b3c5a87ac732c263d90c\",\n        \"quantidade\": 1\n      }\n    ],\n    \"precoTotal\": 110,\n    \"frete\": 9\n  }"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Delete",
+          "method": "DELETE",
+          "endpoint": "<<baseurl>><<port>>/carrinho/delete/634cbce817bea50638e0833e",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "variables": [],
+      "description": null
+    },
+    {
+      "v": 11,
+      "name": "Pedido",
+      "folders": [],
+      "requests": [
+        {
+          "v": "17",
+          "name": "FindAll",
+          "method": "GET",
+          "endpoint": "<<baseurl>><<port>>/pedido/findAll",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "FindById",
+          "method": "GET",
+          "endpoint": "<<baseurl>><<port>>/pedido/find/6349ff1d0b9c4ea73b4d0434",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Create",
+          "method": "POST",
+          "endpoint": "<<baseurl>><<port>>/pedido/create",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"pizzas\": [\n    {\"_id\": \"6348b3f4a29add9b7a2a6bc9\", \"quantidade\": 1},\n    {\"_id\": \"6348b3c5a87ac732c263d90c\", \"quantidade\": 5}\n  ],\n  \"precoTotal\": 200,\n  \"frete\": 15.25,\n  \"concluido\": true\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "Delete",
+          "method": "DELETE",
+          "endpoint": "<<baseurl>><<port>>/pedido/delete/634cbd6c17bea50638e08387",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "UpdateStatus",
+          "method": "PATCH",
+          "endpoint": "<<baseurl>><<port>>/pedido/updateStatus/634a20c6f41311ac07639a49",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "bearer",
+            "token": "<<token>>",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "variables": [],
+      "description": null
+    }
+  ],
+  "requests": [],
+  "auth": {
+    "authType": "inherit",
+    "authActive": true
+  },
+  "headers": [],
+  "variables": [],
+  "description": null
+}
