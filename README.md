@@ -11,7 +11,7 @@ Código desenvolvido em Javascript
 1. baixe todo o código
 2. abra o terminal do VS Code
 3. execute: npm i
-4. rode usando: npm run dev
+4. rode usando: npm run start
 
 ## Endpoints
 
