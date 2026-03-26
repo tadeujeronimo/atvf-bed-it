@@ -12,9 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/tadeujeronimo/atvf-bed-it.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["back-end", "node.js", "javascript"],
+  "author": "Tadeu Jerônimo <tadeus.jeronimo@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tadeujeronimo/atvf-bed-it/issues"
   },
@@ -30,7 +30,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
-  },
-  "author": "Tadeu Jerônimo <tadeus.jeronimo@gmail.com>",
-  "license": "MIT"
+  }
 }
