@@ -13,6 +13,13 @@ Código desenvolvido em Javascript
 3. execute: npm i
 4. rode usando: npm run start
 
+## Documentacao da API
+
+- Swagger UI: http://localhost:3000/docs/api-docs
+- Arquivo OpenAPI: `swagger.json`
+- Colecao Hoppscotch: `Hoppscotch/hoppscotch-collection_Pizzaria.json`
+- Ambiente Hoppscotch: `Hoppscotch/hoppscotch-environment_Pizzaria.json`
+
 ## Endpoints
 
 Todos os endpoints da API estao listados abaixo.
@@ -83,10 +90,8 @@ Observação:
 | PATCH  | /pedido/updateStatus/:id    | Sim  | Atualizar status do pedido         |
 | DELETE | /pedido/delete/:id          | Sim  | Remover pedido                     |
 
-## Autor
-
-- **Nome:** Tadeu dos Santos Jerônimo
-- **E-mail:** [tadeus.jeronimo@gmail.com](mailto:tadeus.jeronimo@gmail.com)
+## Contato
+- Email: [tadeus.jeronimo@gmail.com](mailto:tadeus.jeronimo@gmail.com)
 
 ## Licença
 [MIT](https://choosealicense.com/licenses/mit/)
