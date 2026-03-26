@@ -13,16 +13,16 @@ Código desenvolvido em Javascript
 3. execute: npm i
 4. rode usando: npm run start
 
-## Documentacao da API
+## Documentação da API
 
 - Swagger UI: http://localhost:3000/docs/api-docs
 - Arquivo OpenAPI: `swagger.json`
-- Colecao Hoppscotch: `Hoppscotch/hoppscotch-collection_Pizzaria.json`
+- Coleção Hoppscotch: `Hoppscotch/hoppscotch-collection_Pizzaria.json`
 - Ambiente Hoppscotch: `Hoppscotch/hoppscotch-environment_Pizzaria.json`
 
 ## Endpoints
 
-Todos os endpoints da API estao listados abaixo.
+Todos os endpoints da API estão listados abaixo.
 
 Observação:
 - Endpoints com cadeado exigem token JWT no header Authorization.
@@ -32,15 +32,15 @@ Observação:
 
 | Método | Endpoint      | Auth | Descrição           |
 | :----- | :------------ | :--- | :------------------- |
-| POST   | /auth/login   | Nao  | Autenticar usuário   |
+| POST   | /auth/login   | Não  | Autenticar usuário   |
 
-### Usuario
+### Usuário
 
 | Método | Endpoint                     | Auth | Descrição                        |
 | :----- | :--------------------------- | :--- | :-------------------------------- |
 | GET    | /usuario/findById/:id        | Sim  | Buscar usuário por id             |
 | GET    | /usuario/findAll             | Sim  | Listar usuários (com paginação)   |
-| POST   | /usuario/create              | Nao  | Criar usuário                     |
+| POST   | /usuario/create              | Não  | Criar usuário                     |
 | POST   | /usuario/addAddress/:id      | Sim  | Adicionar endereço ao usuário     |
 | POST   | /usuario/addFavPizza/:id     | Sim  | Adicionar pizza favorita          |
 | PUT    | /usuario/update/:id          | Sim  | Atualizar usuário                 |
