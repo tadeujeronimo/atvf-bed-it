@@ -94,4 +94,4 @@ Observação:
 - Email: [tadeus.jeronimo@gmail.com](mailto:tadeus.jeronimo@gmail.com)
 
 ## Licença
-[MIT](https://choosealicense.com/licenses/mit/)
+[GNU](LICENSE)
