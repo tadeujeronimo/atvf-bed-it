@@ -14,7 +14,7 @@
   },
   "keywords": ["back-end", "node.js", "javascript"],
   "author": "Tadeu Jerônimo <tadeus.jeronimo@gmail.com>",
-  "license": "MIT",
+  "license": "GPL-3.0-only",
   "bugs": {
     "url": "https://github.com/tadeujeronimo/atvf-bed-it/issues"
   },

@@ -92,6 +92,3 @@ Observação:
 
 ## Contato
 - Email: [tadeus.jeronimo@gmail.com](mailto:tadeus.jeronimo@gmail.com)
-
-## Licença
-[GNU](LICENSE)
